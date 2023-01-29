@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "762241170514",
+    "project_id": "gotiket-52ab8",
+    "storage_bucket": "gotiket-52ab8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762241170514:android:d248d5e46be1f5c48a338b",
+        "android_client_info": {
+          "package_name": "com.example.gotiket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762241170514-6kv6pcdd0eglehuku8209mf2fcsllf5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9AhSo0jDwef6kxEbLUAaYHosFO4ua9Qw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762241170514-6kv6pcdd0eglehuku8209mf2fcsllf5e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
