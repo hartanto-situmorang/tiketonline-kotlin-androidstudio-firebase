@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardPreventCornerOverlap="false"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlhyst_klik"
+        android:layout_width="match_parent"
+        android:layout_height="129dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="2dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/bground"
+        android:elevation="10dp"
+        android:focusable="true"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Tiket :"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Komentar :"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt2"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="tanggal :"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt3"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Status :"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/jenis_hyst"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/txt1"
+            android:text="@string/jenis_pesawat"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tglhyst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jmltikethyst"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/txt3"
+            android:text="20"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/statushyst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tglhyst"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="11dp"
+            android:layout_toEndOf="@+id/txt4"
+            android:text="Berhasil"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/jmltikethyst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jenis_hyst"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/txt2"
+            android:text="Tidak Ramah"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/logo"
+            android:layout_width="91dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:alpha="0.8"
+            android:backgroundTint="#FF9800"
+            android:backgroundTintMode="screen"
+            android:src="@drawable/historyicon" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

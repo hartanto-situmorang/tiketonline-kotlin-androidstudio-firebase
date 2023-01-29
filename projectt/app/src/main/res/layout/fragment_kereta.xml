@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/apk"
+        android:fontFamily="sans-serif-black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="32dp"
+        android:textColor="@color/primary"
+        android:paddingTop="20dp"
+        android:text="Gotiket"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subjudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/apk"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:paddingStart="32dp"
+        android:text="Tiket Yang Tersedia"
+        android:textSize="14sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylekrt_view"
+        tools:listitem="@layout/layout_listpesawat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subjudul"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

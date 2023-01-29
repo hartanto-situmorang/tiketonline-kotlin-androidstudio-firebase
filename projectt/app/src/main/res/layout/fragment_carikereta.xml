@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".caripesawat"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/ketyi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apkkty"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Cari Tiket Kereta"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewEmail2krt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apkkty"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="58dp"
+        android:text="Dari"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewPassword2krt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewEmail2krt"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="49dp"
+        android:text="Tujuan"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPassword3krt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewPassword2krt"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="39dp"
+        android:text="Tanggal\nBerangkat"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/darikrt"
+        android:layout_width="218dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/apkkty"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="32dp"
+        android:layout_toEndOf="@+id/textViewEmail2krt"
+        android:hint="Input Lokasi"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toEndOf="@+id/textViewPassword2krt"
+        app:layout_constraintTop_toBottomOf="@+id/tujuankrt" />
+
+    <EditText
+        android:id="@+id/tujuankrt"
+        android:layout_width="220dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/darikrt"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="32dp"
+        android:layout_toEndOf="@+id/textViewPassword2krt"
+        android:hint="Lokasi Tujuan"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintStart_toEndOf="@+id/textViewEmail2krt" />
+
+    <TextView
+        android:id="@+id/apkkty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingStart="32dp"
+        android:paddingTop="20dp"
+        android:text="Gotiket"
+        android:textColor="#80d11d"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
+
+    <Button
+        android:id="@+id/btnpilihtglkrt"
+        android:layout_width="200dp"
+        android:height="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tujuankrt"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@+id/textViewPassword3krt"
+        android:backgroundTint="#80d11d"
+        android:text="Pilih Tanggal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btncarikereta"
+        android:layout_width="82dp"
+        android:backgroundTint="@color/primary"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnpilihtglkrt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-79dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="57dp"
+        android:layout_toEndOf="@+id/btnpilihtglkrt"
+        android:height="10dp"
+        android:text="Cari"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</RelativeLayout>

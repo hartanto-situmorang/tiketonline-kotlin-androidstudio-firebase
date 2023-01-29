@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/pesawat"
+        android:id="@+id/btn_pesawat"
+        android:icon="@drawable/icon_pesawat"
+        />
+    <item android:title="@string/kereta"
+        android:id="@+id/btnkereta"
+        android:icon="@drawable/icon_kereta"/>
+    <item
+        android:id="@+id/btnbelanja"
+        android:icon="@drawable/icon_belanja"
+        android:title="Pembelian" />
+    <item android:title="@string/history"
+        android:id="@+id/btnhistory"
+        android:icon="@drawable/icon_history"
+        />
+    <item
+        android:id="@+id/btnprofile"
+        android:icon="@drawable/icon_profile"
+        android:title="Profile" />
+</menu>

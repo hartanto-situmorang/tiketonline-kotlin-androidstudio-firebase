@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jumlahpenumpang"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/apk"
+        android:fontFamily="cursive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:paddingStart="32dp"
+        android:textColor="@color/danger"
+        android:paddingTop="5dp"
+        android:text="Gotiket"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subjudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/apk"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:paddingStart="32dp"
+        android:text="Halaman Konfirmasi"
+        android:textStyle="bold"
+        android:textSize="14sp"/>
+
+
+    <TextView
+        android:id="@+id/hargatiket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subjudul"
+        android:layout_marginTop="39dp"
+        android:paddingStart="32dp"
+        android:text="Nama Tiket"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/edtnamabeli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subjudul"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="43dp"
+        android:layout_toEndOf="@+id/hargatiket"
+        android:text="AirLines"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/hargatiket" />
+
+
+    <TextView
+        android:id="@+id/txtjml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hargatiket"
+        android:layout_marginTop="26dp"
+        android:paddingStart="32dp"
+        android:text="Jumlah Beli"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/edtjumlahbeli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtnamabeli"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="29dp"
+        android:layout_toEndOf="@+id/txtjml"
+        android:text="20"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/hargatiket" />
+
+    <TextView
+        android:id="@+id/txtharga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtjml"
+        android:layout_marginTop="29dp"
+        android:paddingStart="32dp"
+        android:text="Status"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/edtstatusbeli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtjumlahbeli"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@+id/txtharga"
+        android:text="Gagal"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/hargatiket" />
+
+    <TextView
+        android:id="@+id/txttgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtharga"
+        android:layout_marginTop="24dp"
+        android:paddingStart="32dp"
+        android:text="Tanggal"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/edttanggalbeli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtstatusbeli"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/txttgl"
+        android:text="89-90-2001"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/hargatiket" />
+
+    <Button
+        android:id="@+id/btnselesai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edttanggalbeli"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/primary"
+        android:text="Selesai"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btncancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edttanggalbeli"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:layout_toEndOf="@+id/btnselesai"
+        android:backgroundTint="@color/danger"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</RelativeLayout>

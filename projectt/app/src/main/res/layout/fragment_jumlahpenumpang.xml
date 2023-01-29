@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jumlahpenumpang"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/apk"
+        android:fontFamily="sans-serif-black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="32dp"
+        android:textColor="@color/title"
+        android:paddingTop="20dp"
+        android:text="Gotiket"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subjudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/apk"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:paddingStart="32dp"
+        android:text="Masukkan Jumlah Penumpang"
+        android:textStyle="bold"
+        android:textSize="14sp"/>
+
+
+    <TextView
+        android:id="@+id/hargatiket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subjudul"
+        android:layout_marginTop="38dp"
+        android:paddingStart="32dp"
+        android:textStyle="bold"
+        android:text="Harga Tiket Perorang"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txtharga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subjudul"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="37dp"
+        android:layout_toEndOf="@+id/hargatiket"
+        android:text="20000000"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/hargatiket" />
+
+    <TextView
+        android:id="@+id/restextnohp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hargatiket"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="54dp"
+        android:text="Jumlah"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/hargatiket" />
+
+    <EditText
+        android:id="@+id/edtjumlah"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/txtharga"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="32dp"
+        android:layout_toEndOf="@+id/restextnohp2"
+        android:hint="Jumlah"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916" />
+
+    <Button
+        android:id="@+id/btnbelitiket"
+        android:layout_width="154dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edtjumlah"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="33dp"
+        android:background="@color/secondary"
+        android:backgroundTint="@color/buttonlogin"
+        android:text="Beli Tiket"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</RelativeLayout>
